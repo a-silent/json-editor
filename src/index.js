@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import {Router} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 
 import {history} from "./history";
 
@@ -14,9 +14,9 @@ state.subscribe(() => console.log ("state: ", state.getState()))
 
 ReactDOM.render (
   <Provider store={state}>
-	<Router history={history} basename={process.env.PUBLIC_URL} >
+	<BrowserRouter history={history} basename={process.env.PUBLIC_URL} >
 		<App/>
-	</Router>
+	</BrowserRouter>
   </Provider>,
   document.getElementById('root')
 )
