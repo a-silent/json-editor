@@ -14,7 +14,7 @@ state.subscribe(() => console.log ("state: ", state.getState()))
 
 ReactDOM.render (
   <Provider store={state}>
-	<Router history={history} >
+	<Router history={history} basename={process.env.PUBLIC_URL} >
 		<App/>
 	</Router>
   </Provider>,
