@@ -1,0 +1,53 @@
+.header {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 15px 0;
+
+  &__logo {
+    height: 90px;
+  }
+
+  &__control-panel {
+    display: flex;
+    align-items: center;
+
+    & button {
+      //-moz-user-select: none;
+      //user-select: none;
+      //min-width: 135px;
+      //padding: 10px 20px;
+      //border: 3px solid #F1FFE7;
+      //outline: none;
+      height: inherit;
+      font-size: 2.5rem;
+      margin: 0 20px 0 0;
+      //border-radius: 10px;
+      //background-color: #213051;
+      //color: #F1FFE7;
+      letter-spacing: 0.03em;
+      //opacity: 0.8;
+      //box-shadow: 2px 2px 3px black;
+
+      //&:active {
+      //  box-shadow: 3px 3px 6px black inset;
+      //  transition: all 0s;
+      //}
+      //
+      //&:hover {
+      //  cursor: pointer;
+      //  border: 3px solid darkblue;
+      //}
+      //
+      //&:disabled {
+      //  background-color: gray;
+      //  border: 3px solid black;
+      //}
+      span {
+        vertical-align: text-bottom;
+      }
+    }
+  }
+}
