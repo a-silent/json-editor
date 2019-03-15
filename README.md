@@ -1,3 +1,5 @@
+# This site is published at https://a-silent.github.io/json-editor/
+
 This project was bootstrapped with [Create React App_old](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
