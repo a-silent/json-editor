@@ -13,7 +13,6 @@ import logo from "../assets/images/json-logo.png";
 class Header extends Component {
   
   saveBtnClick = () => {
-    console.log("SAVE")
 	const { setValueByHash } = this.props;
 	const json = localStorage.getItem("json");
 	if (json) {
@@ -22,7 +21,6 @@ class Header extends Component {
   };
   
   resetBtnClick = () => {
-	console.log("RESET")
 	this.props.resetState();
 	localStorage.removeItem("json");
   };
@@ -36,8 +34,8 @@ class Header extends Component {
 		<div className="header__control-panel">
 		  {/*<Button click={this.saveBtnClick} text="Save" disabled={(isFetching || error) && "disabled"}/>*/}
 		  {/*<Button click={this.resetBtnClick} text="Reset" disabled={(isFetching || error) && "disabled"}/>*/}
-		  <Button htmlType="htmlType" type="primary" disabled={error} loading={ isFetching } click={this.saveBtnClick} text="Save"/>
-		  <Button htmlType="htmlType" type="primary" disabled={ isFetching || error } click={this.resetBtnClick} text="Reset"/>
+		  <Button htmlType="button" type="primary" disabled={error} loading={ isFetching } click={this.saveBtnClick} text="Save"/>
+		  <Button htmlType="button" type="primary" disabled={ isFetching || error } click={this.resetBtnClick} text="Reset"/>
 		</div>
 	  </header>
 	)
