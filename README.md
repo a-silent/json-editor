@@ -1,5 +1,5 @@
 # This site is published at 
-# https://a-silent.github.io/json-editor/
+# http://jsoneditor.tykhyiandrii.php.a-level.com.ua/test
 
 This project was bootstrapped with [Create React App_old](https://github.com/facebook/create-react-app).
 
