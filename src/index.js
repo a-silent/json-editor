@@ -1,22 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
-import {BrowserRouter} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { Router } from "react-router-dom";
 
-import {history} from "./history";
+import { history } from "./history";
 
-import App from './App';
-import state from './store';
+import App from "./App";
+import state from "./store";
 
-import './styles/index.scss';
+import "./styles/index.scss";
 
-state.subscribe(() => console.log ("state: ", state.getState()))
-
-ReactDOM.render (
+ReactDOM.render(
   <Provider store={state}>
-	<BrowserRouter history={history} basename={process.env.PUBLIC_URL} >
-		<App/>
-	</BrowserRouter>
+    <Router history={history} basename={process.env.PUBLIC_URL}>
+      <App />
+    </Router>
   </Provider>,
-  document.getElementById('root')
-)
+  document.getElementById("root")
+);
